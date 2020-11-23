@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skaiciuokle</title>
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="init()">
+
+  
+
+    <div class="wrapper">
+        <div class="border">
+            <h2>Valiutos:</h2>
+            <input type="text" id="GBP" value="0" onchange="gbpConvert()"/>
+            <label for="GBP"> GBP </label>
+        
+            </br>
+        
+            <input type="text" id="USD"  value="0" onchange="usdConvert()" />
+            <label for="USD"> USD </label>
+        
+            </br>
+        
+            <input type="text" id="EUR"  value="0" onchange="eurConvert()" />
+            <label for="EUR"> EUR </label>
+            <button class="button">Skaičiuoti</button>
+        </div>
+       
+      
+    </div>
+
+
+</body>
+
+</html>
