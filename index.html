@@ -20,18 +20,26 @@
     <div class="wrapper">
         <div class="border">
             <h2>Valiutos:</h2>
-            <input type="number" id="GBP" value="0" onchange="gbpConvert()"/>
-            <label for="GBP"> GBP </label>
-        
+            <div class="first">
+                <input type="number" id="GBP" value="0" onchange="gbpConvert()"/>
+                <label for="GBP"> GBP </label>
+                <img src="img/gb.svg">
+            
+            </div>
+          
             </br>
-        
-            <input type="number" id="USD"  value="0" onchange="usdConvert()" />
+        <div class="first">
+            <input type="first" id="USD"  value="0" onchange="usdConvert()" />
             <label for="USD"> USD </label>
+            <img src="img/us.svg">
+        </div>
+          
         
             </br>
-        
-            <input type="number" id="EUR"  value="0" onchange="eurConvert()" />
+        <div class="first">   <input type="number" id="EUR"  value="0" onchange="eurConvert()" />
             <label for="EUR"> EUR </label>
+            <img src="img/eu.svg"></div>
+         
             <button class="button">Skaičiuoti</button>
         </div>
        

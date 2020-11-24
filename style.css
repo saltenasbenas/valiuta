@@ -75,3 +75,16 @@ body {
     font-weight: 500;
 
 }
+.first {display: flex;
+    justify-content: space-evenly;
+text-align: center;
+align-items: center;}
+    
+
+.first img {
+    width: 20px;
+    height: auto;
+}
+label {
+    color: white;
+}
