@@ -13,24 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
 </head>
 
-<body onload="init()">
+<body>
 
   
 
     <div class="wrapper">
         <div class="border">
             <h2>Valiutos:</h2>
-            <input type="text" id="GBP" value="0" onchange="gbpConvert()"/>
+            <input type="number" id="GBP" value="0" onchange="gbpConvert()"/>
             <label for="GBP"> GBP </label>
         
             </br>
         
-            <input type="text" id="USD"  value="0" onchange="usdConvert()" />
+            <input type="number" id="USD"  value="0" onchange="usdConvert()" />
             <label for="USD"> USD </label>
         
             </br>
         
-            <input type="text" id="EUR"  value="0" onchange="eurConvert()" />
+            <input type="number" id="EUR"  value="0" onchange="eurConvert()" />
             <label for="EUR"> EUR </label>
             <button class="button">Skaičiuoti</button>
         </div>
