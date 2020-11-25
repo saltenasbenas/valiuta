@@ -15,35 +15,51 @@
 
 <body>
 
-  
+
 
     <div class="wrapper">
         <div class="border">
             <h2>Valiutos:</h2>
             <div class="first">
-                <input type="number" id="GBP" value="0" onchange="gbpConvert()"/>
+                <input type="number" id="GBP" value="0" onchange="gbpConvert()" />
                 <label for="GBP"> GBP </label>
                 <img src="img/gb.svg">
-            
+                <button class="currencyButton" onclick="onButtonClick(gbp)"><img src="img/delete.svg"></button>
             </div>
-          
+
             </br>
-        <div class="first">
-            <input type="first" id="USD"  value="0" onchange="usdConvert()" />
-            <label for="USD"> USD </label>
-            <img src="img/us.svg">
-        </div>
-          
-        
+            <div class="first">
+                <input type="first" id="USD" value="0" onchange="usdConvert()" />
+                <label for="USD"> USD </label>
+                <img src="img/us.svg">
+                <button class="currencyButton" onclick="onButtonClick(usd)"><img src="img/delete.svg"></button>
+            </div>
+
+
             </br>
-        <div class="first">   <input type="number" id="EUR"  value="0" onchange="eurConvert()" />
-            <label for="EUR"> EUR </label>
-            <img src="img/eu.svg"></div>
-         
-            <button class="button">Skaičiuoti</button>
+            <div class="first"> <input type="number" id="EUR" value="0" onchange="eurConvert()" />
+                <label for="EUR"> EUR </label>
+                <img src="img/eu.svg">
+                <button class="currencyButton" onclick="onButtonClick(eur)"><img src="img/delete.svg"></button>
+            </div>
+
+
+
         </div>
-       
-      
+        <button class="button" onclick="init()">Skaičiuoti</button>
+        <button class="buttonAdd">Statistika</button>
+        <table class=myTable>
+            <thead>
+                <tr>
+                    <th>Valiuta</th>
+                    <th>Kiekis</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
     </div>
 
 

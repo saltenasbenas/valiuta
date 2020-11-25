@@ -4,12 +4,15 @@ gbp = document.getElementById("GBP");
 usd = document.getElementById("USD");
 eur = document.getElementById("EUR");
 button = document.getElementById("button");
+currencyButton = document.getElementById("currencyButton");
+first = document.getElementById("first");
 
 
 function init() {
     gbpConvert();
     eurConvert();
     usdConvert();
+    onButtonClick(gbp);
 
 };
 function gbpConvert() {
@@ -27,6 +30,18 @@ function usdConvert() {
     eur.value = (usd.value) * 0.84;
 };
 
-init();
-button.addEventListener("click", init()
+button.addEventListener("onclick", init()
 );
+init();
+// function onButtonClick(gbp) {
+   
+//   gbp.remove();
+// };
+// function onButtonClick(usd) {
+   
+//     usd.remove();
+// };
+// function onButtonClick(eur) {
+   
+//     eur.remove();
+// };

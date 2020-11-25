@@ -83,8 +83,24 @@ align-items: center;}
 
 .first img {
     width: 20px;
+    max-width: 20px;
     height: auto;
 }
 label {
     color: white;
+}
+.first .currencyButton {
+    margin: 0px 5px;
+    padding: 3px 5px;
+}
+.myTable {
+    margin:auto;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 30px 30px;
+}
+
+th {
+    margin-left: 50px;
 }
